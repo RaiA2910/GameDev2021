@@ -14,3 +14,12 @@ version 0.0.1
 }"><br>
 
 <div id="myDiv01">...</div>
+
+<input id="myNum02" type=number value="3" ><br>
+
+<input type=button value="myEvent cubed" onclick="{
+    let myIn02 = document.getElementById('myNum02').value
+    document.getElementById('myDiv02').innerHTML = myIn02 + ' squared = ' + myIn02*myIn02
+}"><br>
+
+<div id="myDiv02">...</div>
