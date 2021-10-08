@@ -26,12 +26,13 @@ version 0.0.1
 
 <input id="myNum03" type=number value="6" ><br>
 
-<input type=button value="myEvent Addition" onclick="{
+<input type=button value="myEvent squares" onclick="{
     let myIn03 =
-ParseFloat(document.getElementById('myNum03').value)
-     let myAnswer = myIn03 + myIn03
-     document.getElementById('myDiv03').innerHTML =
-        myIn03 + ' Addition = ' + myAnswer
+parseFloat(document.getElementById('myNum03').value)
+    let myAnswer = myIn03 * myIn03
+    document.getElementById('myDiv03').innerHTML =
+        myIn03 + ' squared = ' + myAnswer
 }"><br>
+
 <div id="myDiv03">...</div>
 
