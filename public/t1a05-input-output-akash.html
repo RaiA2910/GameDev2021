@@ -39,7 +39,7 @@
 
 <input id="myNum05" type=number value="7" > <input id="myNum06" type=number value="8" > <br>
 
-<input type=button value="myEvent addition" onclick="{
+<input type=button value="myEvent subtraction" onclick="{
                                                      
     let myIn05 = document.getElementById('myNum05').value
     let myIn06 = document.getElementById('myNum06').value                                                
@@ -53,7 +53,7 @@
 
 <input id="myNum07" type=number value="9" > <input id="myNum08" type=number value="3" > <br>
 
-<input type=button value="myEvent addition" onclick="{
+<input type=button value="myEvent division" onclick="{
                                                      
     let myIn07 = document.getElementById('myNum07').value
     let myIn08 = document.getElementById('myNum08').value                                                
@@ -63,3 +63,17 @@
 }"><br>
 
 <div id="myDiv07">...</div>
+
+
+<input id="myNum09" type=number value="9" > <input id="myNum010" type=number value="9" > <br>
+
+<input type=button value="myEvent addition" onclick="{
+                                                     
+    let myIn09 = document.getElementById('myNum09').value
+    let myIn010 = document.getElementById('myNum010').value                                                
+   
+    document.getElementById('myDiv09').innerHTML = (parseFloat(myIn09)*parseFloat(myIn010))
+      
+}"><br>
+
+<div id="myDiv09">...</div>
