@@ -21,7 +21,14 @@ Note: Javacsript does use var and let for local variables.<br>
 <input id="myText01" type=text value="The dog " ><br>
 
 <input id="button" type=button value="Show Variable" onclick="{
-alert('hi')
+
+ let myX = document.getElementById('myText01').value
+                                                              
+ document.getElementById('myDiv02').innerHTML = myX         
+                                                              
+                                                              
+                                                              
+                                                              
 }"> <br>
 <div id="myDiv02">...</div>
 
