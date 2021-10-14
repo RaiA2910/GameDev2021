@@ -49,3 +49,17 @@
 }"><br>
 
 <div id="myDiv05">...</div>
+
+
+<input id="myNum07" type=number value="9" > <input id="myNum08" type=number value="3" > <br>
+
+<input type=button value="myEvent addition" onclick="{
+                                                     
+    let myIn07 = document.getElementById('myNum07').value
+    let myIn08 = document.getElementById('myNum08').value                                                
+   
+    document.getElementById('myDiv07').innerHTML = (parseFloat(myIn07)/parseFloat(myIn08))
+      
+}"><br>
+
+<div id="myDiv07">...</div>
