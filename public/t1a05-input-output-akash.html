@@ -77,3 +77,18 @@
 }"><br>
 
 <div id="myDiv09">...</div>
+
+
+
+<input id="myNum11" type=number value="11" > <input id="myNum12" type=number value="11" > <br>
+
+<input type=button value="myEvent multiplication" onclick="{
+                                                     
+    let myIn11 = document.getElementById('myNum11').value
+    let myIn12 = document.getElementById('myNum12').value                                                
+   
+    document.getElementById('myDiv11').innerHTML = (parseFloat(myIn11)/parseFloat(myIn12))
+      
+}"><br>
+
+<div id="myDiv11">...</div>
