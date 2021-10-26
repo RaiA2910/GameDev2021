@@ -59,3 +59,15 @@ document.getElementById('red').style.color = 'green'
 }"><br>
 
 <div id="myDiv02">...</div>
+
+<input id="myNum03" type=number value="29" ><br>
+
+<input type=button value="Enter" onClick="{
+ 	let myIn03 = parseFloat(document.getElementById('myNum03').value)
+	if (myIn03 == 24){
+	document.getElementById('myDiv03').innerHTML = myIn03 + ' is EQUAL to 24'
+	} else {
+		document.getElementById('myDiv03').innerHTML = myIn03 + ' is NOT EQUAL to 24'}
+}">
+
+<div id="myDiv03">...</div>
