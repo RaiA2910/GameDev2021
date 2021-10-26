@@ -71,3 +71,15 @@ document.getElementById('red').style.color = 'green'
 }">
 
 <div id="myDiv03">...</div>
+
+<input id="myNum04" type=number value="69" ><br>
+
+<input type=button value="Complex if" onClick="{
+	let myIn04 = parseFloat(document.getElementById('myNum04').value)
+	if (myIn04 > 1 && myIn04 < 100 ){
+	document.getElementById('myDiv04').innerHTML = ' True '
+} else {
+	document.getElementById('myDiv04').innerHTML = ' False'}
+}">
+
+<div id="myDiv04">...</div>
