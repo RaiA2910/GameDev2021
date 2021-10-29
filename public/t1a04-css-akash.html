@@ -62,4 +62,50 @@ h1 {
 </form><br><br>
 
 
+<b id="border" style="border-style:dotted;"> This is a dotted border</b><br><br>
+<b id="border1" style="border-style:solid;"> This is a solid border</b><br><br>
+
+
+<b id="bordertest" style="border-style:dotted;"> Change the type of border</b><br>
+<input type=button value=Solid onclick="{
+                                         document.getElementById('bordertest').style.border = 'solid'
+                                         }"><br>
+<input type=button value=Dotted onclick="{
+                                         document.getElementById('bordertest').style.border = 'dotted'
+                                         }"><br><br>
+
+
+
+<b id="everythingCombined" style= "color:#0000ff; background-Color:pink; border-style:dotted;"> Change Everything</b><br>
+<input type=button value=changeTextColor onclick="{
+                                         document.getElementById('everythingCombined').style.color = 'orange'
+                                         }">
+
+
+<input type=button value=changeBackground onclick="{
+                                         document.getElementById('everythingCombined').style.backgroundColor = 'purple'
+                                         }">
+
+<input type=button value=changeOpacity onclick="{
+                                         document.getElementById('everythingCombined').style.opacity = 0.5
+                                         }">
+
+<input type=button value=changeBorder onclick="{
+                                         document.getElementById('everythingCombined').style.border = 'solid'
+                                         }">
+
+<input type=button value=changeBorderBack onclick="{
+                                         document.getElementById('everythingCombined').style.border = 'dotted'
+                                         }"><br><br><br>
+
+
+
+<b id="everythingCombined2" style= "color:#0000ff; background-Color:pink; border-style:dotted;"> One Click</b><br>
+
+<input type=button value=changeEverything onclick="{
+					 document.getElementById('everythingCombined2').style.color = 'orange'
+					 document.getElementById('everythingCombined2').style.backgroundColor = 'purple'
+                                         document.getElementById('everythingCombined2').style.border = 'solid'
+					 document.getElementById('everythingCombined2').style.opacity = 0.5
+                                         }"><br>
 
