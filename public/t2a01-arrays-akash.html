@@ -26,13 +26,18 @@ Max Array Entry: <input type=text id="myText01" value="3"><br>
 
 <body>
 
-<h2>JavaScript Arrays</h2>
+<h2>More Arrays Examples</h2>
 
-<p id="demo"></p>
-
-<script>
-const cars = ["Saab", "Volvo", "BMW"];
-document.getElementById("demo").innerHTML = cars;
-</script>
-
-</body>
+<input type=button value="Example Class Set and Show" onClick="{
+  let myPerson = {
+   'firstName' : 'Rick',
+   'lastName' : 'Astley',
+   'age' : '55',
+   'skinColor' : 'White',                                     
+   'eyeColor' : 'Brown',
+   }
+                      
+    document.getElementById('myDiv01').innerHTML = '<br>myPerson object has properties: <br>'   
+    document.getElementById('myDiv01').innerHTML += 'firstName: ' +myPerson.firstName + '<br>' 
+    document.getElementById('myDiv01').innerHTML += 'lastName: ' +myPerson.lastName + '<br>'      
+    document.getElementById('myDiv01').innerHTML = 'age: ' +myPerson.age + '<br>'                                                            
