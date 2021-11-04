@@ -18,22 +18,99 @@ Note: Javacsript does use var and let for local variables.<br>
 
 <h4> Example working code</h4>
 
+<br>
 <input id="myText01" type=text value="The dog " ><br>
 
 <input id="button" type=button value="Show Variable" onclick="{
-
  let myX = document.getElementById('myText01').value
                                                               
- document.getElementById('myDiv02').innerHTML = myX         
+ document.getElementById('myDiv01').innerHTML = myX         
                                                               
                                                               
                                                               
                                                               
 }"> <br>
-<div id="myDiv02">...</div>
+<div id="myDiv01">...</div>
 
 <input type=button value="Using no Variables" onclick="{
-   document.getElementById('myDiv01').innerHTML += hi '<br>'  
+   document.getElementById('myDiv02').innerHTML += 'hi'  
 }"><br>
 
-<div id="myDiv01">...</div>
+<div id="myDiv02">...</div>
+<br>
+
+<input type=text id="no" value="69" ><br>
+<input type=button  value="button" onclick="{
+
+let myx =document.getElementById('no').value
+
+   document.getElementById('myDiv03').innerHTML += myx  + '<br>' 
+}"><br>
+
+<div id="myDiv03"></div>
+<br>variables using intergers<br>
+<input type=text id="yes" value="28" ><br>
+<input type=button  value="button" onclick="{
+
+let myx =parseFloat(document.getElementById('yes').value)
+
+   document.getElementById('myDiv04').innerHTML += myx  + '<br>' 
+}"><br>
+
+<div id="myDiv04"></div>
+<br>
+
+<input type=text id="ok" value="420" ><br>
+<input type=button  value="button" onclick="{
+
+let myx =parseFloat(document.getElementById('ok').value)
+let myx1 =parseFloat(document.getElementById('ok').value)
+
+   document.getElementById('myDiv05').innerHTML += myx + myx1  + '<br>' 
+}"><br>
+
+<div id="myDiv05"></div>
+
+<br>
+
+
+<input type=text id="dumb" value="68" >+
+<input type=text id="Jamie" value="12" ><br>
+<input type=button  value="button" onclick="{
+
+let myx =parseFloat(document.getElementById('dumb').value)
+let myx1 =parseFloat(document.getElementById('Jamie').value)
+
+   document.getElementById('myDiv06').innerHTML += myx + myx1  + '<br>' 
+}"><br>
+
+<div id="myDiv06"></div>
+
+
+
+<br>
+<input type=text id="neutron" value="23" >+
+<input type=text id="khalil" value="66" ><br>
+<input type=button  value="button" onclick="{
+
+let myx =parseFloat(document.getElementById('neutron').value)
+let myx1 =parseFloat(document.getElementById('khalil').value)
+
+   document.getElementById('myDiv07').innerHTML += myx - myx1  + '<br>' 
+}"><br>
+
+<div id="myDiv07"></div>
+
+
+<br>
+<input type=text id="jimmy" value="12" >+
+<input type=text id="fatty" value="10" ><br>
+<input type=button  value="button" onclick="{
+
+let myx =parseFloat(document.getElementById('jimmy').value)
+let myx1 =parseFloat(document.getElementById('fatty').value)
+
+   document.getElementById('myDiv08').innerHTML += myx * myx1  + '<br>' 
+}"><br>
+
+<div id="myDiv08"></div>
