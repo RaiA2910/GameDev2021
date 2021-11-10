@@ -5,6 +5,25 @@ version 0.0.1
 Classes are both Objects that store variables (called properties) and Functions 
 that work on the variables (called methods)
 
+
+<script>
+
+class myCat {
+    constructor(passName, passAge) {
+        this.myName = passName;
+        this.myAge = passAge;
+     }
+     myShow(){
+        document.getElementById('myDiv02').innerHTML = 'Hello '+ this.myName + '. You are ' + this.myAge + ' years old<br>'
+    }
+}   // end class myAnimal 
+
+</script>
+
+
+
+
+
 <h4> Example Working Classes Codes</h4>
 
 
@@ -26,19 +45,6 @@ class myAnimal {
 
 <div id="myDiv01">...</div
 
-<script>
-
-class myCat {
-    constructor(passName, passAge) {
-        this.myName = passName;
-        this.myAge = passAge;
-     }
-     myShow(){
-        document.getElementById('myDiv02').innerHTML = 'Hello '+ this.myName + '. You are ' + this.myAge + ' years old<br>'
-    }
-}   // end class myAnimal 
-
-</script>
 
 
 Nothing: <input type=text id="myText01" value="Useless at the moment"><br>
