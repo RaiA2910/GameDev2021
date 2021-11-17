@@ -1,13 +1,12 @@
-<h1 align=center>t2a06-spy-akash.html</h1>
+<h1 align=center>t2a06-spy-name.html</h1>
 <textarea id="myArea01" rows=4 cols=70>Hello how are you</textarea><br> 
 
 
-<input type=button value="encrpyt" onclick="{
-   let my Temp = ''
-   myString = document.getElementById('myArea01').value.toLowercase('')
-   for (let myLoop=0; myLoop < myString.length; myLoop++){
-      myTemp = ''
-    myTemp = myString[myLoop]
+<input type=button value="encrypt" onclick="{
+   let myTemp = ''
+   myString = document.getElementById('myArea01').value.toLowerCase().split('')
+   for (let myLoop=0;   myLoop < myString.length; myLoop++){
+      myTemp = myString[myLoop]
       if (myString[myLoop] == 'e') {myTemp  = 'f'} 
       if (myString[myLoop] == 'h') {myTemp  = 'i'} 
       if (myString[myLoop] == 'a') {myTemp  = 'o'} 
@@ -15,27 +14,34 @@
       if (myString[myLoop] == 'g') {myTemp  = 'n'} 
       if (myString[myLoop] == 'k') {myTemp  = 'c'}                                       
       if (myString[myLoop] == 'r') {myTemp  = 't'} 
-      if (myString[myLoop] == 'v') {myTemp  = 'p'}                                       
-                                            
-     myString[myLoop] = myTemp
+      if (myString[myLoop] == 'v') {myTemp  = 'p'}     
+      myString[myLoop] = myTemp
    }
-   document.getElementById('myArea01').value = myString.join('')
+   document.getElementById('myArea02').value = myString.join('')
 }"><br><br>
 
 
 
-<textarea id="myArea01" rows=4 cols=70></textarea><br> 
+<textarea id="myArea02" rows=4 cols=70></textarea><br> 
 
 <input type=button value="decrypt" onclick="{
-   alert(myString)
+   let myTemp = ''
+   myString = document.getElementById('myArea02').value.toLowerCase().split('')
+   for (let myLoop=0;   myLoop < myString.length; myLoop++){
+      myTemp = myString[myLoop]
+      if (myString[myLoop] == 'f') {myTemp  = 'e'} 
+      if (myString[myLoop] == 'i') {myTemp  = 'h'} 
+      if (myString[myLoop] == 'o') {myTemp  = 'a'} 
+      if (myString[myLoop] == 'd') {myTemp  = 'b'} 
+      if (myString[myLoop] == 'n') {myTemp  = 'g'} 
+      if (myString[myLoop] == 'c') {myTemp  = 'k'}                                       
+      if (myString[myLoop] == 't') {myTemp  = 'r'} 
+      if (myString[myLoop] == 'p') {myTemp  = 'v'}     
+      myString[myLoop] = myTemp
+   }
+   document.getElementById('myArea03').value = myString.join('')
 }"><br><br>
 
 
-<textarea id="myArea01" rows=4 cols=70></textarea><br> 
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
+<textarea id="myArea03" rows=4 cols=70></textarea><br> 
 
