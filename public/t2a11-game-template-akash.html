@@ -61,3 +61,84 @@ function myCheckHit(){
   document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 10 + 'px'
   myCheckHit()     // checks for all collisions
 }"><br><br>
+
+   
+ <script>
+   let myInterval
+
+function myIsOnScreen(){
+   if (parseInt(document.getElementById('myImg01').style.left) > 400) {
+     document.getElementById('myDiv01').style.left = '397px'
+   }
+}
+
+function myIsOnScreen2(){
+   if (parseInt(document.getElementById('myImg02').style.left) > 2000) {
+     document.getElementById('myDiv02').style.left = '397px'
+   }
+}
+
+function myIsOnScreen3(){
+   if (parseInt(document.getElementById('myImg03').style.left) > 2000) {
+     document.getElementById('myDiv03').style.left = '397px'
+   }
+}
+
+
+
+document.addEventListener('keydown', function (event) {
+
+   if (event.key === 'd') {
+      clearInterval(myInterval)
+      myInterval = setInterval(function(){
+   
+         document.getElementById('myImg01').style.left = 
+             parseInt(document.getElementById('myDiv01').style.left) + 3
+         myIsOnScreen()
+
+
+} ,20)
+   }
+
+   if (event.key === 'a') {
+      clearInterval(myInterval)
+      myInterval = setInterval(function(){
+   
+         document.getElementById('myImg01').style.left = 
+             parseInt(document.getElementById('myDiv01').style.left) - 3
+         myIsOnScreen()
+
+
+} ,20)
+   }
+
+   if (event.key === 'w') {
+      clearInterval(myInterval)
+      myInterval = setInterval(function(){
+   
+         document.getElementById('myImg01').style.top = 
+             parseInt(document.getElementById('myDiv01').style.top) - 3
+         myIsOnScreen()
+
+
+} ,20)
+   }
+
+   if (event.key === 's') {
+      clearInterval(myInterval)
+      myInterval = setInterval(function(){
+   
+         document.getElementById('myImg01').style.top = 
+             parseInt(document.getElementById('myDiv01').style.top) + 3
+         myIsOnScreen()
+
+
+} ,20)
+   }
+});
+
+
+</script>
+   
+   
+   
