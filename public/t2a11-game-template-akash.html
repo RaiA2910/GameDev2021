@@ -147,8 +147,10 @@ document.addEventListener('keydown', function (event) {
   myCheckHit()     // checks for all collisions
 }"><br><br>
    
-<input type=button value="Image Right Fast Button" onTouchStart="{this.click(); event.preventDefault();}" onclick="{
-  document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 10 + 'px'
-  myCheckHit()     // checks for all collisions
-}"><br><br>
+
+<div style="text-align:center;width:480px;">
+  <button event.key="moveup()" event.key="clearmove()" ontouchstart="moveup()">UP</button><br><br>
+  <button event.key="moveleft()" event.key="clearmove()" ontouchstart="moveleft()">LEFT</button>
+  <button event.key="moveright()" event.key="clearmove()" ontouchstart="moveright()">RIGHT</button><br><br>
+  <button event.key="movedown()" event.key="clearmove()" ontouchstart="movedown()">DOWN</button>
       
