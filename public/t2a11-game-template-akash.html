@@ -26,6 +26,30 @@ function myHitOther(my1,my2){
        (top1    <=  bottom2) ){
        return true
    }
+
+}
+
+
+function myCheckHit(){
+   if ( myHitOther('myImg01','myImg02') ){
+	deathSound.play()
+       alert('you lose')
+	document.getElementById('myImg05').style.opacity = 1
+	document.getElementById('myImg06').style.opacity = 1
+      document.getElementById('myImg01').style.left = '50px'
+      document.getElementById('myImg01').style.top = '550px'
+	  document.getElementById('myImg05').style.top = '234px'
+	  document.getElementById('myImg05').style.left = '480px'
+	  document.getElementById('myImg06').style.top = '452px'
+	  document.getElementById('myImg06').style.left = '1290px'
+   }
+
+   
+   
+   
+   
+   
+   
 }
 
    let myInterval
