@@ -82,6 +82,7 @@ document.addEventListener('keydown', function (event) {
          document.getElementById('myImg01').style.left = 
              parseInt(document.getElementById('myImg01').style.left) + 3
          myIsOnScreen()
+	      myCheckHit()
 
 
 } ,20)
@@ -94,6 +95,7 @@ document.addEventListener('keydown', function (event) {
          document.getElementById('myImg01').style.left = 
              parseInt(document.getElementById('myImg01').style.left) - 3
          myIsOnScreen()
+	      myCheckHit()
 
 
 } ,20)
@@ -106,6 +108,7 @@ document.addEventListener('keydown', function (event) {
          document.getElementById('myImg01').style.top = 
              parseInt(document.getElementById('myImg01').style.top) - 3
          myIsOnScreen()
+	      myCheckHit()
 
 
 } ,20)
@@ -118,23 +121,13 @@ document.addEventListener('keydown', function (event) {
          document.getElementById('myImg01').style.top = 
              parseInt(document.getElementById('myImg01').style.top) + 3
          myIsOnScreen()
+	      myCheckHit()
 
 
 } ,20)
    }
 });  
-
-   
-   
- function myCheckHit(){
-   if ( myHitOther('myImg01','myImg02') ){
-       alert('you lose')
-      //document.getElementById('myImg01').style.left = '20px'
-   }
-
-   // more if statements here
-
-}  
+  
    
    
    
